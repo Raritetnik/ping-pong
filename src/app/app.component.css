@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.Barrier {
+    display: flex;
+    justify-content: center;
+}
+
+.playZone {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: black;
+    border: 20px solid orange;
+}
+
+
+.Player1 {
+    position: absolute;
+    background-color: blue;
+    height: 100px;
+    transform: translateY(-50%);
+    width: 20px;
+
+    right: 0;
+    transition: top 0.5s;
+}
+
+.Player2 {
+   position: absolute;
+    background-color: red;
+    height: 100px;
+    transform: translateY(-50%);
+    width: 20px;
+
+    left: 0;
+    transition: top 0.5s;
+}
+
+.Ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100%;
+
+    transition: top 0.1s, left 0.1s;
+}
